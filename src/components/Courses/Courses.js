@@ -7,12 +7,16 @@ const Courses = () => {
     const [courses, setCourses] = useState(first14);
     console.log(courses);
     return (
-        <div>
-            {
-                courses.map((course) => (
-                    <SingleCourse key={course.id} course={course}></SingleCourse>
-                ))
-            }
+        <div className="row">
+            <div className="col-md-9">
+                {
+                    courses.map((course) => (
+                        <SingleCourse key={course.id} course={course}></SingleCourse>
+                    ))
+                }
+            </div>
+            <div className="col-md-3"> </div>
+
         </div>
     );
 };
