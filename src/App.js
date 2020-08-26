@@ -1,9 +1,10 @@
 import React from 'react';
+import Courses from './components/Courses/Courses';
 
 function App() {
   return (
     <div>
-      <h3>This is react app</h3>
+      <Courses></Courses>
     </div>
   );
 }
